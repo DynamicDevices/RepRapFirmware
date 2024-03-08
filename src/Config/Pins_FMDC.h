@@ -69,7 +69,7 @@ constexpr uint32_t IAP_IMAGE_START = 0x20028000;
 #define SUPPORT_SCARA			0
 #define SUPPORT_FIVEBARSCARA	0
 #define SUPPORT_HANGPRINTER		0
-
+#define SUPPORT_ARCITYPE		0
 // The physical capabilities of the machine
 
 constexpr size_t NumDirectDrivers = 4;				// The maximum number of drives supported by the electronics

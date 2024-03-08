@@ -14,6 +14,7 @@
 #include "HangprinterKinematics.h"
 #include "PolarKinematics.h"
 #include "FiveBarScaraKinematics.h"
+#include "ArcitypeKinematics.h"
 
 #include <Platform/RepRap.h>
 #include <Platform/Platform.h>
@@ -278,6 +279,11 @@ void Kinematics::LimitSpeedAndAcceleration(DDA& dda, const float *normalisedDire
 #if SUPPORT_FIVEBARSCARA
 	case KinematicsType::fiveBarScara:
 		return new FiveBarScaraKinematics();
+#endif
+
+#if SUPPORT_ARCITYPE
+	case KinematicsType::arcitype:
+		return new ArcitypeKinematics();
 #endif
 	}
 }
