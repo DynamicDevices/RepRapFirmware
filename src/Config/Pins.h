@@ -309,4 +309,8 @@
 # define SUPPORT_SCANNING_PROBES		(SUPPORT_CAN_EXPANSION)
 #endif
 
+#ifndef SUPPORT_ARCITYPE
+# define SUPPORT_ARCITYPE			1
+#endif
+
 #endif // PINS_H__
